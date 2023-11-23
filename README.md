@@ -1,30 +1,45 @@
-# React + TypeScript + Vite
+# Comment History for Siemens
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interview app
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Libraries Used](#libraries-used)
+- [Installation](#installation)
+- [Development](#development)
+- [Building](#building)
+- [Testing](#testing)
 
-## Expanding the ESLint configuration
+## Libraries Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [React](https://reactjs.org/): JavaScript library for building user interfaces.
+- [Redux](https://redux.js.org/): Predictable state container for JavaScript apps.
+- [Material-UI](https://material-ui.com/): React components for faster and easier web development.
+- [React Chartjs 2](https://reactchartjs.github.io/react-chartjs-2/): React wrapper for Chart.js.
+- [Jest](https://jestjs.io/): JavaScript Testing Framework.
 
-- Configure the top-level `parserOptions` property like this:
+Feel free to add or remove libraries based on your actual dependencies.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Installation
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Make sure you have [Node.js] v18+(https://nodejs.org/) installed.
+
+npm install
+
+## Development
+Run the app in development mode:
+
+npm run dev
+This will start the development server, and you can access your app at http://localhost:3000 (or another port if 3000 is already in use).
+
+## Building
+Build the app for production:
+
+npm run build
+This command creates an optimized production build in the build directory.
+
+## Testing
+Run tests:
+
+npm test
+This command runs your Jest tests.
